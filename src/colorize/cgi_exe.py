@@ -52,9 +52,9 @@ class Painter:
             self.cnn_128.to_gpu()
             # self.cnn_512.to_gpu()
         if self._colormode == 'YUV':
-            serializers.load_npz("./cgi-bin/paint_x2_unet/models/unet_128_standard-YUV", self.cnn_128)
+            serializers.load_npz("./src/colorize/models/unet_128_standard-YUV", self.cnn_128)
         elif self._colormode == 'LAB':
-            serializers.load_npz("./cgi-bin/paint_x2_unet/models/cnn_128_iter_370000", self.cnn_128)
+            serializers.load_npz("./src/colorize/models/cnn_128_iter_370000", self.cnn_128)
         # serializers.load_npz(
         #     "./cgi-bin/paint_x2_unet/models/unet_512_standard", self.cnn_512)
 

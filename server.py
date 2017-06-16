@@ -13,10 +13,9 @@ from cgi import parse_header, parse_multipart
 from urllib.parse import parse_qs
 
 
-# sys.path.append('./cgi-bin/wnet')
-sys.path.append('./cgi-bin/paint_x2_unet/colorize')
+sys.path.append('./src/colorize')
 import cgi_exe
-sys.path.append('./cgi-bin/helpers')
+sys.path.append('./src/helpers')
 from platformAdapter import OSHelper
 
 class MyHandler(http.server.CGIHTTPRequestHandler):
